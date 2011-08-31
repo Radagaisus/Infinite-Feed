@@ -175,7 +175,7 @@
 							items_html += options.tmpl(item);
 						}
 					});
-					if (flagNewItems) options.notifyOnNewItems(storage.slice(storage.length - flagNewItems - 1));
+					if (flagNewItems && $.isFunction(options.notifyOnNewItems)) options.notifyOnNewItems(storage.slice(storage.length - flagNewItems - 1));
 					
 					// decide whether to add them at the bottom or at the top
 					if (loadingPastItems) {

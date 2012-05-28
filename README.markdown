@@ -1,1 +1,4 @@
-infinite feed in a small abstraction for showing feeds. It comes with a infinite scrolling and loading management.
+Infinite feed is a small abstraction for creating Infinite scroll for data resources.
+
+# To Do
+- Drop jScrollPane and use Antiscroll instead.
